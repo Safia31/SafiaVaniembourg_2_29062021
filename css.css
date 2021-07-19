@@ -1,5 +1,595 @@
-#logo
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+#page{
+    width: 1200px;
+    margin: auto;
+}
+
+/*Header*/
+
+#logo img{
+    width: 80px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav ul
 {
+    list-style-type: none;
+    display: flex;
+    font-family: "Raleway";
+}
+
+nav li
+{
+    margin-right: 50px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #0065FC;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.Titre{
+    font-family: "Raleway";
+    font-size: 15px;
+}
+
+/*Search*/
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-map-marker-alt
+{
+    background-color: #d7d9df;
+    padding: 12px;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -6px;
+}
+
+input{
+    border: solid #F2F2F2 1px;
+    padding: 10px 25px 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+::placeholder{
+    font-family: "Raleway";
+}
+
+.search button{
+    color: white;
+  background-color: #0065FC;
+  font-weight: bold;
+  font-size: 1.01em;
+  border: none;
+  padding: 10px 25px 10px 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: -5px;
+}
+
+/*Filtres*/
+
+#Filters{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "Raleway";
+}
+
+#Filters button{
+    border: 0;
+    background: none;
+    position: relative;
+    display: flex;
+}
+
+#Filters i{
+    /*position: absolute;
+    left: 0;
+    bottom: 0;
+    */
+}
+
+
+#filters h4{
+    font-size: 10px;
+}
+
+.fa-money-bill-wave{
+    background-color:#DEEBFF  ;
+    color: #0065fc;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.eco{
+    width: -100px;
+    border-radius: 0px 100px 100px 0px;
+    border: solid #DEEBFF 2px;
+    padding: 9px;
+    border-left: none;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+.fa-child{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.family{
+    border-radius: 0px 100px 100px 0px;
+    border: solid #DEEBFF 2px;
+    padding: 9px;
+    border-left: none;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+.fa-heart{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.love{
+    border-radius: 0px 100px 100px 0px;
+    border: solid #DEEBFF 2px;
+    padding: 9px;
+    border-left: none;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+.fa-dog{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.animals{
+    border-radius: 0px 100px 100px 0px;
+    border: solid #DEEBFF 2px;
+    padding: 9px;
+    border-left: none;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 40px; 
+}
+
+#Information{
+    display: flex;
+    align-items: center;
+    font-family: "Raleway";
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.fa-info-circle{
+    display: flex;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+
+.logement{
+    margin-right: 50px;
+    padding-right: 50px;
+    padding: 15px;
+}
+
+/*hotels*/
+
+.hote{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.hotels{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: "Raleway";
+    margin-bottom: 20px;
+}
+
+.hotels1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cannebiere img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hebergement h4, .hebergement p, .hebergement i{
+    margin: 3px 0px;
+}
+
+.cannebiere{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.port img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.port{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+
+.mouettes img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mouettes{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.mer img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mer{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.panier img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.panier{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.amina img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.amina{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.affiche{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+/* populaire*/
+
+.pops{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.pop{
+    position: relative;
+    font-family: "Raleway";
+    font-weight: bold;
     display: flex;
     flex-direction: row;
 }
+
+.fa-chart-line{
+    position: absolute;
+}
+
+.soleil img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.soleil{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.coeur img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.coeur{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none; 
+}
+
+.bleu img{
+    width: 99%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.bleu{
+    color: black;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 12px #f2f2f2;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none; 
+}
+
+/* activités */
+
+.activité{
+    display: flex;
+    flex-direction: row;
+}
+
+.acti{
+    position: relative;
+    font-family: "Raleway";
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+.vieux img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.vieux{
+    color: black;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+.fort img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fort{
+    color: black;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+.ile img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ile{
+    color: black;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+.calanques img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.calanques{
+    color: black;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+.garde img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.garde{
+    color: black;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+.longchamp img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.longchamp{
+    color: black;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(255, 197, 197);
+    border-radius: 20px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.propos{
+    color: #000;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.hébergements{
+    color: #000;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.assistance{
+    color: #000;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+
+
+
