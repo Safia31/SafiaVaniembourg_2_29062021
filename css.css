@@ -5,7 +5,7 @@
 
 #page{
     max-width: 1200px;
-    height: auto;
+    margin: auto;
 }
 
 /*Header*/
@@ -76,7 +76,7 @@ input{
 }
 
 .search button{
-    color: white;
+  color: white;
   background-color: #0065FC;
   font-weight: bold;
   font-size: 1.01em;
