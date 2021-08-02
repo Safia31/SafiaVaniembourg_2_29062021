@@ -4,7 +4,7 @@
 }
 
 #page{
-    width: 1200px;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -159,17 +159,16 @@ input{
     display: flex;
 }
 
-.hébergements:nth-child(1){
+.largeurHebergement:nth-child(1){
     flex: 2;
 }
 
-.aside:nth-child(2){
+.largeurHebergement:nth-child(2){
     flex: 1;
 }
 
 .hébergementmarseille{
     height: 650px;
-    width: 950px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -268,8 +267,6 @@ input{
 }
 
 aside{
-    left: 400px;
-    bottom: 555px;
     position: relative;
     background-color: #F2F2F2;
     border-radius: 20px; 
@@ -364,6 +361,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: #f2f2f2;
 }
 
 .commentaire{
@@ -394,6 +392,10 @@ footer nav a{
 footer h3{
     margin-left: 40px;
 }
+
+/*Responsive*/
+
+
 
 
 
