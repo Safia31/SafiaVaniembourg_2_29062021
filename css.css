@@ -5,7 +5,7 @@
 
 #page{
     width: 1200px;
-    margin: auto;
+    height: auto;
 }
 
 /*Header*/
@@ -23,19 +23,20 @@ header{
     justify-content: space-between;
     align-items: flex-end;
 }
-nav ul
+header nav ul
 {
     list-style-type: none;
     display: flex;
     font-family: "Raleway";
 }
 
-nav li
+header nav li
 {
-    margin-right: 50px;
+    margin-right: -20px;
+    margin-left: 60px;
 }
 
-nav a
+header nav a
 {
     font-size: 1.3em;
     color: #0065FC;
@@ -104,84 +105,31 @@ input{
 }
 
 #Filters i{
-    /*position: absolute;
-    left: 0;
-    bottom: 0;
-    */
+    position: relative;
+    left: 15px;
+    padding: 12px;
+    
 }
-
 
 #filters h4{
     font-size: 10px;
 }
 
-.fa-money-bill-wave{
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     background-color:#DEEBFF  ;
     color: #0065fc;
     padding: 12px;
     border-radius: 50px;
 }
 
-.eco{
-    width: -100px;
+.eco, .family, .love, .animals{
     border-radius: 0px 100px 100px 0px;
-    border: solid #DEEBFF 2px;
+    border: solid #f2f2f2 2px;
     padding: 9px;
     border-left: none;
     font-size: 13px;
-    padding-right: 30px;
-    padding-left: 40px;
-}
-
-.fa-child{
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 12px;
-    border-radius: 50px;
-}
-
-.family{
-    border-radius: 0px 100px 100px 0px;
-    border: solid #DEEBFF 2px;
-    padding: 9px;
-    border-left: none;
-    font-size: 13px;
-    padding-right: 30px;
-    padding-left: 40px;
-}
-
-.fa-heart{
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 12px;
-    border-radius: 50px;
-}
-
-.love{
-    border-radius: 0px 100px 100px 0px;
-    border: solid #DEEBFF 2px;
-    padding: 9px;
-    border-left: none;
-    font-size: 13px;
-    padding-right: 30px;
-    padding-left: 40px;
-}
-
-.fa-dog{
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 12px;
-    border-radius: 50px;
-}
-
-.animals{
-    border-radius: 0px 100px 100px 0px;
-    border: solid #DEEBFF 2px;
-    padding: 9px;
-    border-left: none;
-    font-size: 13px;
-    padding-right: 30px;
-    padding-left: 40px; 
+    padding-right: 40px;
+    padding-left: 50px;
 }
 
 #Information{
@@ -205,44 +153,65 @@ input{
     padding: 15px;
 }
 
-/*hotels*/
+/*hébergements*/
 
-.hote{
+#container{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+}
+
+.hébergements:nth-child(1){
+    flex: 2;
+}
+
+.aside:nth-child(2){
+    flex: 1;
+}
+
+.hébergementmarseille{
+    height: 650px;
+    width: 950px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
 
-.hotels{
-    margin-top: 30px;
-    margin-left: 40px;
+.titrehébergement{
+    margin-top: 10px;
+    margin-left: 20px;
     font-family: "Raleway";
-    margin-bottom: 20px;
 }
 
-.hotels1 {
+.hébergements{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 10px;
+    padding: 10px; 
 }
 
-.cannebiere img{
+.hébergements a{
+    text-decoration: none;
+}
+
+.hébergement img{
     width: 99%;
     height: 110px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;   
 }
 
-.hebergement h4, .hebergement p, .hebergement i{
+.hébergement h4, .hébergement p{
     margin: 3px 0px;
+    font-family: "Raleway";
+    font-size: 13px;
 }
 
-.cannebiere{
+.hébergement{
     color: black;
-    width: 300px;
+    width: 250px;
     height: auto;
     box-shadow: 1px 1px 12px #f2f2f2;
     padding: 5px;
@@ -250,320 +219,145 @@ input{
     object-fit: cover;
     background-color: white;
     border-radius: 20px;
-    text-decoration: none;
-}
-
-.port img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.port{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
-} 
-
-.mouettes img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.mouettes{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.mer img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.mer{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.panier img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.panier{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.amina img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.amina{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
 }
 
 .affiche{
-    font-size: 18px;
+    font-family: "Raleway";
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: black;
+    margin: 10px 0px 30px 30px;
 }
 
 /* populaire*/
 
-.pops{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: #F2F2F2;
-}
-
-.pop{
+.titrepopulaire{
     position: relative;
     font-family: "Raleway";
     font-weight: bold;
     display: flex;
-    flex-direction: row;
 }
 
 .fa-chart-line{
     position: absolute;
+    left: 350px;
+    top: 20px;
 }
 
-.soleil img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+.populaire img{
+    width: 125px;
+    height: 125px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover; 
 }
 
-.soleil{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
+.populaire h4, .populaire p{
+    margin: 3px 0px 5px 10px;
+    font-family: "Raleway";
+    font-size: 13px;
+}
+
+.populaire{
+    display: flex;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #f2f2f2;
+    padding: 4px;
+    margin: 30px 0px 30px 0px;
+    color: black;
+}
+
+aside{
+    left: 400px;
+    bottom: 555px;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 20px; 
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+aside a{
     text-decoration: none;
 }
 
-.coeur img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+.etoile{
+    margin-top: 50px;
+    margin-left: 5px;
 }
 
-.coeur{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none; 
+.blue-star{
+    color: #0065FC;
 }
 
-.bleu img{
-    width: 99%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-
-.bleu{
-    color: black;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none; 
+.grey-star{
+    color: grey;
 }
 
 /* activités */
 
-.activité{
+.activitémarseille{
     display: flex;
     flex-direction: row;
 }
 
-.acti{
-    position: relative;
+.titremarseille{
+    display: flex;
+    flex-direction: row;
     font-family: "Raleway";
     font-weight: bold;
+    margin-left: 20px;
+}
+
+.activité img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.activité{
+    color: black;
+    font-family: "Raleway";
+    font-weight: bold;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+
+.activités img{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.activités{
+    color: black;
+    font-family: "Raleway";
+    font-weight: bold;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    object-fit: cover;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+
+.activité1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.vieux img{
-    width: 300px;
-    height: 350px;
-    border-radius: 20px 20px 0px 0px;
+.activité p, .activités p{
+    margin-left: 10px;
 }
-
-.vieux{
-    color: black;
-    width: 300px;
-    height: auto;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
-.fort img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.fort{
-    color: black;
-    width: 300px;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
-.ile img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.ile{
-    color: black;
-    width: 300px;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
-.calanques img{
-    width: 300px;
-    height: 350px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.calanques{
-    color: black;
-    width: 300px;
-    height: auto;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
-.garde img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.garde{
-    color: black;
-    width: 300px;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
-.longchamp img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.longchamp{
-    color: black;
-    width: 300px;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
-    object-fit: cover;
-    background-color: rgb(255, 197, 197);
-    border-radius: 20px;
-}
-
 /* footer */
 
 footer{
@@ -572,22 +366,33 @@ footer{
     justify-content: space-between;
 }
 
-.propos{
+.commentaire{
     color: #000;
     font-family: "Raleway";
     font-weight: bold;
 }
 
-.hébergements{
-    color: #000;
+footer nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
     font-family: "Raleway";
-    font-weight: bold;
 }
 
-.assistance{
-    color: #000;
-    font-family: "Raleway";
-    font-weight: bold;
+footer nav li{
+    font-size: 12px;
+    margin: 5px 0px;
+    right: 30px;
+}
+
+footer nav a{
+    color: grey;
+    text-decoration: none;
+    
+}
+
+footer h3{
+    margin-left: 40px;
 }
 
 
