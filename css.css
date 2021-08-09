@@ -13,7 +13,6 @@
 #logo img{
     width: 80px;
     height: 50px;
-    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -21,7 +20,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
 }
 header nav ul
 {
@@ -127,6 +125,8 @@ input{
     border: solid #f2f2f2 2px;
     padding: 9px;
     border-left: none;
+    font-weight: bold;
+    font-family: "Raleway";
     font-size: 13px;
     padding-right: 40px;
     padding-left: 50px;
@@ -160,43 +160,46 @@ input{
 }
 
 .largeurHebergement:nth-child(1){
-    flex: 2;
+    width: 64%;
 }
 
 .largeurHebergement:nth-child(2){
-    flex: 1;
+    width: 31%;
 }
 
 .hébergementmarseille{
-    height: 650px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    background-color: #F2F2F2;
-}
-
-.titrehébergement{
-    margin-top: 10px;
-    margin-left: 20px;
-    font-family: "Raleway";
 }
 
 .hébergements{
     display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.hébergements h3{
+    font-family: "Raleway";
+    margin-left: 30px;
+}
+
+.hebergements-liste{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    justify-content: space-between;
+    margin: 0px 0px 10px 10px;
     padding: 10px; 
 }
 
 .hébergements a{
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .hébergement img{
-    width: 99%;
+    width: 200px; 
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;   
@@ -210,11 +213,10 @@ input{
 
 .hébergement{
     color: black;
-    width: 250px;
-    height: auto;
+    width: 200px;
     box-shadow: 1px 1px 12px #f2f2f2;
     padding: 5px;
-    margin: 20px;
+    margin: 5px 10px 20px 10px;
     object-fit: cover;
     background-color: white;
     border-radius: 20px;
@@ -225,7 +227,7 @@ input{
     font-weight: bold;
     text-decoration: none;
     color: black;
-    margin: 10px 0px 30px 30px;
+    margin: 30px 0px 0px 30px;
 }
 
 /* populaire*/
@@ -235,47 +237,41 @@ input{
     font-family: "Raleway";
     font-weight: bold;
     display: flex;
+    margin-left: 10px;
 }
 
 .fa-chart-line{
     position: absolute;
-    left: 350px;
+    left: 300px;
     top: 20px;
 }
 
 .populaire img{
-    width: 125px;
-    height: 125px;
+    width: 170px;
+    height: 140px;
     border-radius: 10px 0px 0px 10px;
     object-fit: cover; 
 }
 
 .populaire h4, .populaire p{
-    margin: 3px 0px 5px 10px;
+    margin: 10px 5px 0px 10px;
     font-family: "Raleway";
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .populaire{
     display: flex;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 0px #f2f2f2;
-    padding: 4px;
-    margin: 30px 0px 30px 0px;
+    padding: 5px;
+    margin: 20px;
     color: black;
 }
 
 aside{
-    position: relative;
     background-color: #F2F2F2;
     border-radius: 20px; 
-    height: 635px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
-
 }
 
 aside a{
@@ -283,8 +279,8 @@ aside a{
 }
 
 .etoile{
-    margin-top: 50px;
-    margin-left: 5px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .blue-star{
@@ -299,7 +295,7 @@ aside a{
 
 .activitémarseille{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .titremarseille{
@@ -308,20 +304,20 @@ aside a{
     font-family: "Raleway";
     font-weight: bold;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .activité img{
-    width: 300px;
+    width: 260px;
     height: 300px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activité{
     color: black;
+    font-size: 12px;
     font-family: "Raleway";
     font-weight: bold;
-    width: 300px;
-    height: auto;
     margin: 20px;
     object-fit: cover;
     background-color: rgb(245, 245, 245);
@@ -329,18 +325,17 @@ aside a{
 }
 
 .activités img{
-    width: 300px;
+    width: 250px;
     height: 100px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activités{
     color: black;
+    font-size: 12px;
     font-family: "Raleway";
     font-weight: bold;
-    width: 300px;
-    height: 150px;
     margin: 20px;
     object-fit: cover;
     background-color: rgb(245, 245, 245);
@@ -360,7 +355,6 @@ aside a{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background: #f2f2f2;
 }
 
@@ -368,6 +362,7 @@ footer{
     color: #000;
     font-family: "Raleway";
     font-weight: bold;
+    margin-right: 150px;
 }
 
 footer nav ul{
@@ -393,9 +388,41 @@ footer h3{
     margin-left: 40px;
 }
 
-/*Responsive*/
+/*Responsive Smartphones*/
 
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+    #page{
+        width: auto;
+    }
 
+    .inscrire{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-weight: bold;
+    }
+
+    .titre{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav{
+        display: flex;
+    }
+
+    nav ul{
+        border-bottom: 2px solid #F2F2F2;
+    }
+}
+    
 
 
 
