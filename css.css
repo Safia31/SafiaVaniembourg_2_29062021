@@ -113,6 +113,12 @@ input{
     
 }
 
+.buttonfilters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     background-color:#DEEBFF  ;
     color: #0065fc;
@@ -420,25 +426,30 @@ footer h3{
     header{
         display: flex;
         flex-direction: column;
-        border-bottom: 2px solid #F2F2F2;
-
     }
 
     .titre{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    nav{
-        display: flex;
-        justify-content: center;
+        margin: 0;
     }
 
     nav ul{
         padding-left: 0px;
+        justify-content: space-evenly;
+
+    }
+
+    header nav li{
+        margin: 0;
+    }
+
+    .navtitre{
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .navtitre:hover{
+        border-bottom: #0065FC;
     }
 
     .Titre{
@@ -448,7 +459,8 @@ footer h3{
     }
 
     .search{
-        width: 310px;
+        width: 350px;
+        height: 50px;
     }
 
     .search button{
@@ -488,15 +500,15 @@ footer h3{
         margin-bottom: 10px;
     }
 
-    .filtre{
-        position: absolute;
-        left: 150px;
-        bottom: 365px;
+    .buttonfilters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .eco, .family, .love, .animals{
-       padding-left: 20px;
-       padding-right: 13px;
+       padding-left: 30px;
+       padding-right: 25px;
        font-size: 12px;
     }
 
@@ -628,7 +640,198 @@ footer h3{
 
 
 }
-    
+ 
+/*Responsive Tablettes*/
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    body{
+        margin: 0;
+    }
+
+    #logo{
+        background: #0065FC;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo img{
+        background: white;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li{
+        margin-left: 100px;
+        margin-right: 0;
+    }
+
+    .titre{
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .inscrire{
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .Titre h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Titre p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .search{
+        margin-left: 20px;
+    }
+
+    #Filters{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Filters h4{
+        font-size: x-large;
+    }
+
+    .eco, .family, .love, .animals{
+        padding-right: 30px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+
+    .hebergements-liste{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .hébergement{
+        width: 170px;
+        margin-bottom: 10px;
+    }
+
+    .hébergement img{
+        width: 170px;
+        height: 100px;
+    }
+
+    .affiche{
+        margin-bottom: 10px;
+    }
+
+    .titrepopulaire{
+        margin: 0;
+    }
+
+    .fa-chart-line{
+        left: 200px;
+    }
+
+    .populaire{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        width: 190px;
+        box-shadow: 1px 1px 12px #f2f2f2;
+        padding: 5px;
+        margin: 5px 10px 20px 10px;
+        object-fit: cover;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .populaire img{
+        width: 190px; 
+        height: 100px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    .description h4{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .description p{
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+    .etoile{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .activitémarseille{
+        background: #0065FC;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .activité img{
+        width: 250px;
+        height: 100px;
+    }
+
+    .activité{
+        height: 140px;
+    }
+
+    .activité1{
+        flex-direction: row;
+    }
+
+    footer{
+        justify-content: space-around;
+    }
+
+    footer ul{
+        margin: 0;
+    }
+
+    footer h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .commentaire{
+        margin: 0;
+    }
+
+
+}
 
 
 
