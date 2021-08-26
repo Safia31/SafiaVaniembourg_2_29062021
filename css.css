@@ -432,6 +432,17 @@ footer h3{
         display: flex;
         flex-direction: row;
         margin: 0;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+    }
+
+    .titre:hover{
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .navtitre{
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     nav ul{
@@ -442,14 +453,6 @@ footer h3{
 
     header nav li{
         margin: 0;
-    }
-
-    .navtitre{
-        border-bottom: 2px solid #F2F2F2;
-    }
-
-    .navtitre:hover{
-        border-bottom: #0065FC;
     }
 
     .Titre{
@@ -626,7 +629,7 @@ footer h3{
     .commentaire h3{
         font-size: 14px;
         margin-top: 20px;
-        margin-left: 15px;
+        margin-left: 10px;
         margin-bottom: 10px;
     }
 
@@ -681,10 +684,6 @@ footer h3{
     header nav li{
         margin-left: 100px;
         margin-right: 0;
-    }
-
-    .titre{
-        border-bottom: 2px solid #F2F2F2;
     }
 
     .inscrire{
@@ -796,17 +795,18 @@ footer h3{
     .activitémarseille{
         background: #0065FC;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         border-radius: 20px;
     }
 
     .activité img{
-        width: 250px;
-        height: 100px;
+        width: 350px;
+        height: 200px;
     }
 
     .activité{
-        height: 140px;
+        height: 250px;
     }
 
     .activité1{
