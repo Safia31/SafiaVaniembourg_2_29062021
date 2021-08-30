@@ -280,7 +280,7 @@ input{
     background-color: white;
     border-radius: 15px;
     padding: 5px;
-    margin: 10px;
+    margin: 15px;
     color: black;
 }
 
@@ -313,6 +313,10 @@ aside a{
     justify-content: space-between;
 }
 
+.activitémarseille a{
+    text-decoration: none;
+}
+
 .titremarseille{
     display: flex;
     flex-direction: row;
@@ -337,6 +341,7 @@ aside a{
     object-fit: cover;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
+    height: 94%;
 }
 
 .activités img{
@@ -355,6 +360,7 @@ aside a{
     object-fit: cover;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
+    height: 140px;
 }
 
 .activité1{
@@ -364,6 +370,7 @@ aside a{
 
 .activité p, .activités p{
     margin-left: 10px;
+    margin-right: 10px;
 }
 /* footer */
 
@@ -371,6 +378,7 @@ footer{
     display: flex;
     flex-direction: row;
     background: #f2f2f2;
+    margin-top: 30px;
 }
 
 .commentaire{
@@ -529,11 +537,12 @@ footer h3{
     }
 
     .titrepopulaire{
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     .fa-chart-line{
         left: 250px;
+        margin-left: 40px;
     }
 
     .populaire img{
